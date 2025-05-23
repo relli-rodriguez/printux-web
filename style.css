@@ -77,14 +77,20 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .grid {
+    display: flex;             /* importante que esté para que flex funcione */
     flex-direction: row; /*estaba column en vez de row */
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* asegúrate que esté */
+    justify-content: space-between; /* para centrar las cards en la fila */
+    gap: 0.5rem;                 /* espacio entre cards */
+
   }
 
      /*se agrego prueba*/ 
   .card {
-    width: 48%;
+    flex: 0 0 48%;  /* ocupa 48% del contenedor, fijo */
     margin-bottom: 1rem;
+    box-sizing: border-box;
   }
 
   }
