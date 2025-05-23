@@ -77,10 +77,18 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
   .grid {
-    flex-direction: column;
+    flex-direction: row; /*estaba column en vez de row */
     align-items: center;
   }
-}
+
+     /*se agrego prueba*/ 
+  .card {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+
+  }
+
 
 .logo-container {
   display: flex;
@@ -98,6 +106,7 @@ footer {
   .logo-container {
     justify-content: flex-start;
   }
+
 }
 
 
