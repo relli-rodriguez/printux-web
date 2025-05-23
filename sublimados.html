@@ -7,20 +7,8 @@
 </head>
 <body>
 
-  <header>
-    <div class="logo-container">
-      <a href="index.html"><img src="img/logoo.png" alt="Logo del negocio" class="logo"></a>
-      <h1>Printux</h1>
-    </div>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="index.html#productos">Productos</a>
-      <a href="sublimados.html">Sublimados</a>
-      <a href="electronica.html">Electrónica</a>
-      <a href="impresiones.html">Impresiones</a>
-      <a href="index.html#contacto">Contacto</a>
-    </nav>
-  </header>
+
+    <div id="header-placeholder"></div>
 
   <section id="productos">
     <h2>Sublimados Personalizados</h2>
@@ -67,6 +55,17 @@
   <footer>
     <p>&copy; 2025 Printux - Pirayú</p>
   </footer>
+
+
+  <script>
+    // Carga dinámica del header
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
+
 
 </body>
 </html>

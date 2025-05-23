@@ -24,11 +24,13 @@ header nav a {
   text-decoration: none;
 }
 
+/*
+Estilos originales del hero - guardados por si quiero revertir cambios
 #hero {
   background: hsl(27, 100%, 50%);
   padding: 2rem;
   text-align: center;
-}
+}*/ 
 
 #productos {
   padding: 2rem;
@@ -98,3 +100,41 @@ footer {
   }
 }
 
+
+/* nuevo stylo para #hero con implementación slyde */ 
+
+/* Estilos para el carrusel */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 250px;  /* anteriormente estaba a 300px cambie para mejorar en movil*/
+  overflow: hidden;
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  /* 
+  rellena y ajusta completamente la imagen pero lo recorda,
+  crear imagen 1200x300 px para ajustar exactamente
+
+  object-fit: cover;*/
+  object-fit: contain;
+  background: #918f8e; /* Fondo opcional para que no se vea vacío si hay margen , temporal hasta ajustar imagen*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
