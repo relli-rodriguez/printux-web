@@ -66,6 +66,38 @@ Estilos originales del hero - guardados por si quiero revertir cambios
   text-align: center;
 }
 
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #004d40; /* un verde oscuro para buen contraste */
+}
+
+#contacto .ubicacion {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #006064;
+}
+
+.redes-sociales {
+  margin-top: 1rem;
+}
+
+.redes-sociales a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.1);
+}
+
+.redes-sociales img {
+  width: 40px;
+  height: 40px;
+}
+
+
 footer {
   background: #333;
   color: white;
